@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		FAB87BB42534FBE60017DD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BB32534FBE60017DD85 /* AppDelegate.swift */; };
 		FAB87BB62534FBE60017DD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BB52534FBE60017DD85 /* SceneDelegate.swift */; };
-		FAB87BB82534FBE60017DD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BB72534FBE60017DD85 /* ViewController.swift */; };
 		FAB87BBB2534FBE60017DD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB87BB92534FBE60017DD85 /* Main.storyboard */; };
 		FAB87BBD2534FBEB0017DD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB87BBC2534FBEB0017DD85 /* Assets.xcassets */; };
 		FAB87BC02534FBEB0017DD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB87BBE2534FBEB0017DD85 /* LaunchScreen.storyboard */; };
+		FAB87BD02535045E0017DD85 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB87BCF2535045E0017DD85 /* Colors.xcassets */; };
+		FAB87BD3253505950017DD85 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BD2253505950017DD85 /* StyleGuide.swift */; };
+		FAB87BD5253508800017DD85 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BD4253508800017DD85 /* CalculatorViewController.swift */; };
+		FAB87BD9253514560017DD85 /* CalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BD8253514560017DD85 /* CalcLabel.swift */; };
+		FAB87BDB253516610017DD85 /* CalcTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BDA253516610017DD85 /* CalcTextFields.swift */; };
+		FAB87BDD2535166D0017DD85 /* CalcButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87BDC2535166D0017DD85 /* CalcButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB87BB02534FBE60017DD85 /* CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB87BB32534FBE60017DD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB87BB52534FBE60017DD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB87BB72534FBE60017DD85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAB87BBA2534FBE60017DD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB87BBC2534FBEB0017DD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB87BBF2534FBEB0017DD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB87BC12534FBEB0017DD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB87BCF2535045E0017DD85 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FAB87BD2253505950017DD85 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		FAB87BD4253508800017DD85 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		FAB87BD8253514560017DD85 /* CalcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcLabel.swift; sourceTree = "<group>"; };
+		FAB87BDA253516610017DD85 /* CalcTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcTextFields.swift; sourceTree = "<group>"; };
+		FAB87BDC2535166D0017DD85 /* CalcButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,76 @@
 		FAB87BB22534FBE60017DD85 /* CalculatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAB87BD1253505570017DD85 /* Helpers */,
+				FAB87BCA2534FC130017DD85 /* Model */,
+				FAB87BC92534FC0E0017DD85 /* Views */,
+				FAB87BC82534FC080017DD85 /* Controllers */,
+				FAB87BC72534FBF70017DD85 /* Resources */,
+			);
+			path = CalculatorApp;
+			sourceTree = "<group>";
+		};
+		FAB87BC72534FBF70017DD85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FAB87BB32534FBE60017DD85 /* AppDelegate.swift */,
 				FAB87BB52534FBE60017DD85 /* SceneDelegate.swift */,
-				FAB87BB72534FBE60017DD85 /* ViewController.swift */,
-				FAB87BB92534FBE60017DD85 /* Main.storyboard */,
+				FAB87BCF2535045E0017DD85 /* Colors.xcassets */,
 				FAB87BBC2534FBEB0017DD85 /* Assets.xcassets */,
 				FAB87BBE2534FBEB0017DD85 /* LaunchScreen.storyboard */,
 				FAB87BC12534FBEB0017DD85 /* Info.plist */,
 			);
-			path = CalculatorApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAB87BC82534FC080017DD85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB87BCC2534FC700017DD85 /* ModelController */,
+				FAB87BCB2534FC200017DD85 /* ViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAB87BC92534FC0E0017DD85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB87BB92534FBE60017DD85 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB87BCA2534FC130017DD85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAB87BCB2534FC200017DD85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAB87BD4253508800017DD85 /* CalculatorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAB87BCC2534FC700017DD85 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		FAB87BD1253505570017DD85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB87BD2253505950017DD85 /* StyleGuide.swift */,
+				FAB87BD8253514560017DD85 /* CalcLabel.swift */,
+				FAB87BDA253516610017DD85 /* CalcTextFields.swift */,
+				FAB87BDC2535166D0017DD85 /* CalcButtons.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB87BC02534FBEB0017DD85 /* LaunchScreen.storyboard in Resources */,
+				FAB87BD02535045E0017DD85 /* Colors.xcassets in Resources */,
 				FAB87BBD2534FBEB0017DD85 /* Assets.xcassets in Resources */,
 				FAB87BBB2534FBE60017DD85 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB87BB82534FBE60017DD85 /* ViewController.swift in Sources */,
+				FAB87BDD2535166D0017DD85 /* CalcButtons.swift in Sources */,
+				FAB87BD5253508800017DD85 /* CalculatorViewController.swift in Sources */,
 				FAB87BB42534FBE60017DD85 /* AppDelegate.swift in Sources */,
 				FAB87BB62534FBE60017DD85 /* SceneDelegate.swift in Sources */,
+				FAB87BD3253505950017DD85 /* StyleGuide.swift in Sources */,
+				FAB87BDB253516610017DD85 /* CalcTextFields.swift in Sources */,
+				FAB87BD9253514560017DD85 /* CalcLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YP6AG3ZWW9;
-				INFOPLIST_FILE = CalculatorApp/Info.plist;
+				INFOPLIST_FILE = CalculatorApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YP6AG3ZWW9;
-				INFOPLIST_FILE = CalculatorApp/Info.plist;
+				INFOPLIST_FILE = CalculatorApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

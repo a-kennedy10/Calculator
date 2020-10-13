@@ -6,4 +6,20 @@
 //  Copyright © 2020 Alex Kennedy. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CalculatorLabel: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.textColor = .titleTint
+    }
+}
+
+
+class CalculatorLabelSub: CalculatorLabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.textColor = .subtitleTint
+    }
+}

@@ -6,4 +6,17 @@
 //  Copyright © 2020 Alex Kennedy. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CalculatorButton: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    func setUpViews() {
+        self.backgroundColor = .subtitleTint
+        self.setTitleColor(.black, for: .normal)
+        self.addCornerRadius()
+    }
+}
